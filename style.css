@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "krona", sans-serif;
+    color: #979797;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/img/rafael-garcin-web.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    backdrop-filter: blur(7px);
+}
+
+@font-face {
+    font-family: "krona";
+    src:
+        url("assets/font/KronaOne-Regular.woff2") format("woff2"),
+        url("assets/font/KronaOne-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.mainBox {
+    border: 3px solid #665E5E;
+    border-radius: 100px;
+    width: 80vw;
+    height: 75dvh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.765);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.photoholgic-spider {
+  top: 8.125rem;
+  left: 10rem;
+  width: 35.125rem;
+  height: 38.95rem;
+  /* position: absolute; */
+  border-radius: 100px;
+}
+
+.headtext {
+    font-size: 1.5em;
+    text-align: right;
+    padding-top: 2.5rem;
+    padding-right: 2.8rem;
+}
+
+.fieldset {
+    padding-top: 1.5rem;
+}
+
+.inputFields {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1em;
+}
+
+label {
+    font-size: 0.8em;
+}
+
+input {
+    all: unset;
+    border: 1px solid #665E5E;
+    border-radius: 21px;
+    padding: 0.3rem;
+    width: 251px;
+    height: 26px;
+    font-size: 0.825em;
+}
+
+input::placeholder {
+    font-size: 0.825em;
+}
+
+.subtext {
+    font-size: 1.5em;
+    padding-top: 2.5rem;
+    padding-right: 2.3rem;
+}
+
+.subtext2 {
+    font-size: 0.725em;
+    text-align: right;
+    padding-top: 0.3rem;
+    padding-right: 2.3rem;
+}

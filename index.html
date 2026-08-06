@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>SIgn up form to</h1>
+    <div class="mainBox">
+        <img src="assets/img/photoholgic-spider 1.png" 
+        alt="photoholgic-spider"
+        class="photoholgic-spider">
+
+        <div>
+            <p class="headtext">A city bleeding in black and white <br>needs The Spider.</p>
+
+                <div class="fieldset">
+                    <div class="inputFields">
+                        <div class="input-field">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" required placeholder="Ben">
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" required placeholder="Reilly">
+                        </div>
+                    </div>
+
+                    <div class="inputFields">
+                        <div class="input-field">
+                            <label for="user-email">Email</label>
+                            <input type="email" id="user-email" name="user-email" required placeholder="benreilly@email.com">
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="user-phone">Phone Number</label>
+                            <input type="tel" name="user-phone" id="user-phone" required placeholder="+63 912 3456 789">
+                        </div>
+                    </div>
+
+                    <div class="inputFields">
+                        <div class="input-field">
+                            <label for="user-password">Password</label>
+                            <input type="password" id="user-password" name="user-password" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="user-password2">Confirm Password</label>
+                            <input type="password" name="user-password2" id="user-password2" required>
+                        </div>
+                    </div>
+                </div>
+
+            <p class="subtext">With no power comes no responsibility.</p>
+            <p class="subtext2">Are you ready to drag Ben Reilly out of the shadows and <br> back into the mask?</p>
+        </div>
+            
+        
+    </div>
 </body>
 </html>
