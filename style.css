@@ -81,6 +81,13 @@ label {
     font-size: 0.8em;
 }
 
+input:user-invalid {
+    border-color: rgb(106, 32, 32);
+}
+input:user-valid {
+    border-color: rgb(42, 79, 42);
+}
+
 input {
     all: unset;
     border: 1px solid #665E5E;
@@ -106,4 +113,41 @@ input::placeholder {
     text-align: right;
     padding-top: 0.3rem;
     padding-right: 2.3rem;
+}
+
+.button-ctr {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    all: unset;
+    border: 1px solid #665E5E;
+    border-radius: 21px;
+    padding: 0.3rem;
+    width: 211px;
+    height: 36px;
+    font-size: 0.825em;
+    text-align: center;
+    background-color: #2D3033;
+    transition: background-color 0.25s;
+}
+
+button:hover {
+    background-color: #20272f;
+
+}
+
+.bottomtext {
+    font-size: 0.625em;
+    text-align: center;
+    padding-top: 1rem;
+    padding-right: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(232, 232, 242);
 }
