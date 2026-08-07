@@ -8,65 +8,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="mainBox">
-        <img src="assets/img/photoholgic-spider 1.png" 
-        alt="photoholgic-spider"
-        class="photoholgic-spider">
+    <main>
+        <div class="mainBox">
+            <img src="assets/img/photoholgic-spider 1.png" 
+            alt="photoholgic-spider"
+            class="photoholgic-spider" width="562" height="623.2">
 
-        <div>
-            <p class="headtext">A city bleeding in black and white <br>needs The Spider.</p>
+            <div class="textarea">
+                <p class="headtext">A city bleeding in black and white <br>needs The Spider.</p>
 
-            <form action="example.com/path" method="post">
-                <div class="fieldset">
-                    <div class="inputFields">
-                        <div class="input-field">
-                            <label for="first_name">First Name</label>
-                            <input type="text" id="first_name" name="first_name" required placeholder="Ben" minlength="2" maxlength="20">
+                <form action="example.com/path" method="post">
+                    <div class="fieldset">
+                        <div class="inputFields">
+                            <div class="input-field">
+                                <label for="first_name">First Name</label>
+                                <input type="text" id="first_name" name="first_name" required placeholder="Ben" minlength="2" maxlength="20">
+                            </div>
+                            
+                            <div class="input-field">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" id="last_name" required placeholder="Reilly" minlength="2" maxlength="20">
+                            </div>
                         </div>
-                        
-                        <div class="input-field">
-                            <label for="last_name">Last Name</label>
-                            <input type="text" name="last_name" id="last_name" required placeholder="Reilly" minlength="2" maxlength="20">
+
+                        <div class="inputFields">
+                            <div class="input-field">
+                                <label for="user-email">Email</label>
+                                <input type="email" id="user-email" name="user-email" required placeholder="benreilly@email.com">
+                            </div>
+                            
+                            <div class="input-field">
+                                <label for="user-phone">Phone Number</label>
+                                <input type="tel" name="user-phone" id="user-phone" required placeholder="+63 912 345 6789" min=11 max=11>
+                            </div>
+                        </div>
+
+                        <div class="inputFields">
+                            <div class="input-field">
+                                <label for="user-password">Password</label>
+                                <input type="password" id="user-password" name="user-password" required>
+                            </div>
+                            
+                            <div class="input-field">
+                                <label for="user-password2">Confirm Password</label>
+                                <input type="password" name="user-password2" id="user-password2" required>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="inputFields">
-                        <div class="input-field">
-                            <label for="user-email">Email</label>
-                            <input type="email" id="user-email" name="user-email" required placeholder="benreilly@email.com">
-                        </div>
-                        
-                        <div class="input-field">
-                            <label for="user-phone">Phone Number</label>
-                            <input type="tel" name="user-phone" id="user-phone" required placeholder="+63 912 345 6789" min=11 max=11>
-                        </div>
+                    <p class="subtext">With no power comes no responsibility.</p>
+                    <p class="subtext2">Are you ready to drag Ben Reilly out of the shadows and <br> back into the mask?</p>
+
+                    <div class="button-ctr">
+                        <button type="submit">Let's do it.</button>
                     </div>
+                </form>
 
-                    <div class="inputFields">
-                        <div class="input-field">
-                            <label for="user-password">Password</label>
-                            <input type="password" id="user-password" name="user-password" required>
-                        </div>
-                        
-                        <div class="input-field">
-                            <label for="user-password2">Confirm Password</label>
-                            <input type="password" name="user-password2" id="user-password2" required>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="subtext">With no power comes no responsibility.</p>
-                <p class="subtext2">Are you ready to drag Ben Reilly out of the shadows and <br> back into the mask?</p>
-
-                <div class="button-ctr">
-                    <button type="submit">Let's do it.</button>
-                </div>
-            </form>
-
-            <p class="bottomtext">Already signed-up? <a href="#">Log in.</a></p>
-        </div>
+                <p class="bottomtext">Already signed-up? <a href="#">Log in.</a></p>
+            </div>
+                
             
-        
-    </div>
+        </div>
+    </main>
 </body>
 </html>

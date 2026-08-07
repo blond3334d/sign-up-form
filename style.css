@@ -32,27 +32,41 @@ body {
 .mainBox {
     border: 3px solid #665E5E;
     border-radius: 100px;
-    width: 80vw;
-    height: 75dvh;
+    width: clamp(2vw, 80vw, 80vw);
+    min-height: clamp(5dvh, 75dvh, 75dvh);
+    /* max-height: 100dvh; */
+    /* height: 75dvh; */
+    height: auto;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.765);
 
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    /* position: relative; */
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+    /* position: relative; */
+}
 
 .photoholgic-spider {
-  top: 8.125rem;
-  left: 10rem;
-  width: 35.125rem;
-  height: 38.95rem;
-  /* position: absolute; */
+  /* top: 8.125rem; */
+  /* left: 10rem; */
   border-radius: 100px;
+  /* position: absolute; */
 }
 
 .headtext {
-    font-size: 1.5em;
+    font-size: clamp(0.5em, calc(2vw + 1em), 1.5em);
     text-align: right;
     padding-top: 2.5rem;
     padding-right: 2.8rem;
@@ -61,6 +75,7 @@ body {
 .fieldset {
     padding-top: 1.5rem;
 }
+
 
 .inputFields {
     display: flex;
@@ -93,7 +108,7 @@ input {
     border: 1px solid #665E5E;
     border-radius: 21px;
     padding: 0.3rem;
-    width: 251px;
+    width: 15.68rem;
     height: 26px;
     font-size: 0.825em;
 }
@@ -103,7 +118,7 @@ input::placeholder {
 }
 
 .subtext {
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding-top: 2.5rem;
     padding-right: 2.3rem;
 }
@@ -145,6 +160,7 @@ button:hover {
     text-align: center;
     padding-top: 1rem;
     padding-right: 0.8rem;
+    padding-bottom: 1rem;
 }
 
 a {
