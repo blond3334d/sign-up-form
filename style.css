@@ -70,6 +70,7 @@ img {
     text-align: right;
     padding-top: 2.5rem;
     padding-right: 2.8rem;
+    max-width: 34ch;
 }
 
 .fieldset {
@@ -118,7 +119,8 @@ input::placeholder {
 }
 
 .subtext {
-    font-size: 1.4em;
+    /* text-align: center; */
+    font-size: 1.380em;
     padding-top: 2.5rem;
     padding-right: 2.3rem;
 }
@@ -128,6 +130,8 @@ input::placeholder {
     text-align: right;
     padding-top: 0.3rem;
     padding-right: 2.3rem;
+    /* padding-left: 5rem; */
+    /* max-width: 44ch; */
 }
 
 .button-ctr {
