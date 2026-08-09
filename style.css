@@ -171,3 +171,12 @@ a {
     text-decoration: none;
     color: rgb(232, 232, 242);
 }
+
+.errorMessage {
+    font-size: 0.5em;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10.5rem;
+    padding-top: 0.3rem;
+    visibility: hidden;
+}
