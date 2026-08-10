@@ -10,7 +10,7 @@ function checkPasswordsMatch() {
     }
 }
 
-if (password.textContent !== confirmPw.textContent) errorMessage.style.visibility = 'visible';
+// if (password.textContent !== confirmPw.textContent) errorMessage.style.visibility = 'visible';
 
 password.addEventListeners("input", checkPasswordsMatch);
 confirmPw.addEventListeners("input", checkPasswordsMatch)

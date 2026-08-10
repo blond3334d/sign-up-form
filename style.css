@@ -33,21 +33,17 @@ body {
     border: 3px solid #665E5E;
     border-radius: 100px;
     width: clamp(2vw, 80vw, 80vw);
-    min-height: clamp(5dvh, 75dvh, 75dvh);
+    /* min-height: clamp(5dvh, 75dvh, 75dvh); */
     /* max-height: 100dvh; */
     /* height: 75dvh; */
     height: auto;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.765);
-
-    /* display: flex;
-    justify-content: space-between; */
-    /* position: relative; */
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
-    
+    overflow: hidden;
+    flex-shrink: 1;
 }
 
 img {
@@ -59,8 +55,8 @@ img {
 }
 
 .photoholgic-spider {
-  /* top: 8.125rem; */
-  /* left: 10rem; */
+  /* top: 8.125rem;
+  left: 10rem; */
   border-radius: 100px;
   /* position: absolute; */
 }
@@ -69,8 +65,9 @@ img {
     font-size: clamp(0.5em, calc(2vw + 1em), 1.5em);
     text-align: right;
     padding-top: 2.5rem;
-    padding-right: 2.8rem;
+    padding-right: 1.5rem;
     max-width: 34ch;
+    line-height: 1.5rem;
 }
 
 .fieldset {
@@ -152,6 +149,7 @@ button {
     text-align: center;
     background-color: #2D3033;
     transition: background-color 0.25s;
+    cursor: pointer;
 }
 
 button:hover {
