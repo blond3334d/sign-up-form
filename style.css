@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/assets/img/rafael-garcin-web.jpg');
+    background-image: url('rafael-garcin-web.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -73,7 +73,6 @@ img {
 .fieldset {
     padding-top: 1.5rem;
 }
-
 
 .inputFields {
     display: flex;
