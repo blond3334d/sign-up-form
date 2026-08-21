@@ -6,6 +6,7 @@
     <title>Sign-up Form</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <main>
@@ -17,7 +18,7 @@
             <div class="textarea">
                 <p class="headtext">A city bleeding in black and white needs The Spider.</p>
 
-                <form action="example.com/path" method="post">
+                <form action="example.com/path" method="post" id="sign-up-form">
                     <div class="fieldset">
                         <div class="inputFields">
                             <div class="input-field">
@@ -46,18 +47,16 @@
                         <div class="inputFields">
                             <div class="input-field">
                                 <label for="user-password">Password</label>
-                                <input type="password" id="user-password" name="user-password" required pattern="(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/)">
+                                <input type="password" id="user-password" name="user-password" required minlength="8">
                             </div>
                             
                             <div class="input-field">
                                 <label for="user-password2">Confirm Password</label>
-                                <input type="password" name="user-password2" id="user-password2" required pattern="(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/)">
+                                <input type="password" name="user-password2" id="user-password2" required minlength="8">
                             </div>
-                        </div>
+                        </div> 
 
-                        <div class="errorMessage">
-                            <p>Password doesn't match</p>
-                        </div>
+                        <div id="errorMessage" class="error"></div>
                     </div>
 
                     <p class="subtext">With no power comes no responsibility.</p>

@@ -97,8 +97,13 @@ label {
 input:user-invalid {
     border-color: rgb(106, 32, 32);
 }
-input:user-valid {
-    border-color: rgb(42, 79, 42);
+input:focus {
+    border-color: rgb(48, 56, 167);
+}
+
+input.password-mismatch,
+input.password-mismatch:focus {
+    border-color: rgb(106, 32, 32);
 }
 
 input {
@@ -170,11 +175,11 @@ a {
     color: rgb(232, 232, 242);
 }
 
-.errorMessage {
+.error {
     font-size: 0.5em;
     display: flex;
     justify-content: flex-end;
     padding-right: 10.5rem;
     padding-top: 0.3rem;
-    visibility: hidden;
+    color: rgb(106, 32, 32); 
 }
